@@ -210,3 +210,8 @@ canvas.addEventListener('mousemove', function (e) {
   mouse.x = e.pageX;
   mouse.y = e.pageY;
 });
+
+canvas.addEventListener('touchmove', function (e) {
+  mouse.x = e.touches[0].clientX;
+  mouse.y = e.touches[0].clientY;
+});
